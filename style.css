@@ -1,29 +1,13 @@
-nav {
-
-}
-
-nav > div {
+nav.v1 > div {
 	display: inline-block;
 	margin: 5px 10px;
 }
 
-nav > div > section {
-	/*visibility: hidden;
-	opacity: 0;*/
+nav.v1 > div > section {
 	position: absolute;
-	/*-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;*/
 }
 
-nav > div:hover > section {
-	/*opacity: 1;
-	visibility: visible;*/
-}
-
-nav > div > section > a {
+nav.v1 > div > section > a {
 	visibility: hidden;
 	display: block;
 	height: 0;
@@ -34,7 +18,36 @@ nav > div > section > a {
 	transition: all 0.3s ease-in-out;
 }
 
-nav > div:hover > section> a {
+nav.v1 > div:hover > section> a {
 	visibility: visible;
 	height: 16px;
+}
+
+nav.v2 {
+	margin-top: 100px;
+}
+
+nav.v2 > div {
+	display: inline-block;
+	margin: 5px 10px;
+}
+
+nav.v2 > div > section {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+nav.v2 > div:hover > section {
+	opacity: 1;
+	visibility: visible;
+}
+
+nav.v2 > div > section > a {
+	display: block;
 }

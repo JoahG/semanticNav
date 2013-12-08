@@ -6,7 +6,32 @@
 		<title>Listless Nav</title>
 	</head>
 	<body>
-		<nav>
+		<div>
+			Both of the following <code>&lt;nav&gt;</code>'s are built with Chris Coyier's <a href="http://css-tricks.com/navigation-in-lists-to-be-or-not-to-be/">list-less navigation</a>. <br>
+			They are built with a <code>&lt;nav&gt; &gt; &lt;div&gt; &gt; &gt;a&lt;</code> layout, with an optional <code> &lt;nav&gt; &gt; &lt;div&gt; &gt; &lt;section&gt;</code> for submenus. <br>
+			The first has a fade-in-out transition for the submenu, using a <code>visibility</code> and <code>opacity</code> trick. <br>
+			The second has a slide-in-out transition, using a <code>height</code> and <code>visibility</code> trick.<br>
+			All the CSS can be seen <a href="style.css">in the CSS file</a>.
+		</div>
+
+		<nav class='v1'>
+			<div>
+				<a href="#!">Home</a>
+			</div>
+			<div>
+				<a href="#!">About</a>
+				<section>
+					<a href="#!">Our Purpose</a>
+					<a href="#!">Our Goal</a>
+					<a href="#!">Another Link</a>
+				</section>
+			</div>
+			<div>
+				<a href="#!">Yo Mamma</a>
+			</div>
+		</nav>
+
+		<nav class='v2'>
 			<div>
 				<a href="#!">Home</a>
 			</div>
