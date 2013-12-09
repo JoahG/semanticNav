@@ -4,3 +4,5 @@ My implementation of Chris Coyier's [list-less nav](http://css-tricks.com/naviga
 
 
 My main purpose in testing it is seeing how a submenu plays into it, while still not using a `ul` in the code, instead using a `section` to hold the submenu links.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/JoahG/semanticnav/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
